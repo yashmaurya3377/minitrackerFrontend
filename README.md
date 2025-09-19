@@ -1,11 +1,11 @@
-# 📌 Mini Event Tracker – Frontend
+#  Mini Event Tracker – Frontend
 
 This is the **frontend** for the **Mini Event Tracker** app.
 It is built with **React (Vite)**, **TailwindCSS**, **Framer Motion**, and integrates with the backend API for authentication and event management.
 
 ---
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 * **React 19** + **Vite** (modern build tool)
 * **React Router v7** (routing)
@@ -16,19 +16,19 @@ It is built with **React (Vite)**, **TailwindCSS**, **Framer Motion**, and integ
 
 ---
 
-## ✨ Features
+##  Features
 
-* 🔐 User authentication (signup, login, logout)
-* 👤 Profile management with user stats (upcoming & past events)
-* 📅 Event management (create, view, share, filter)
-* 🎉 Share events via **Copy Link** or **WhatsApp**
-* 📊 Separate event views: upcoming, past, all
-* 📍 Create **online** or **venue** events with rich UI
-* 🖼️ Responsive design with smooth animations
+*  User authentication (signup, login, logout)
+*  Profile management with user stats (upcoming & past events)
+*  Event management (create, view, share, filter)
+*  Share events via **Copy Link** or **WhatsApp**
+*  Separate event views: upcoming, past, all
+*  Create **online** or **venue** events with rich UI
+*  Responsive design with smooth animations
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```frontend/
 │── public/
@@ -63,7 +63,7 @@ It is built with **React (Vite)**, **TailwindCSS**, **Framer Motion**, and integ
 │── README.md
 ---
 
-## ⚙️ Setup & Installation
+##  Setup & Installation
 
 1. Clone repository:
 
@@ -89,7 +89,7 @@ It is built with **React (Vite)**, **TailwindCSS**, **Framer Motion**, and integ
 
 ---
 
-## 🛠️ Working Process
+##  Working Process
 
 1. **Authentication Flow**
 
@@ -146,7 +146,7 @@ Authorization: Bearer <token>
 ##  Deployment
 
 Frontend is deployed on **Vercel**.
- [Live App](https://your-vercel-deployment-link.vercel.app)
+ [Live App](https://mini-event-tracker-react.vercel.app/)
 
 ---
 
@@ -170,8 +170,8 @@ It provides seamless integration with the backend, offering authentication, CRUD
 ##  Author & Contact
 
 **Yash Maurya**
-📧 Email: [yashmaurya3377@gmail.com](mailto:yashmaurya3377@gmail.com)
-💼 GitHub: [yashmaurya3377](https://github.com/yashmaurya3377)
+ Email: [yashmaurya3377@gmail.com](mailto:yashmaurya3377@gmail.com)
+ GitHub: [yashmaurya3377](https://github.com/yashmaurya3377)
 
 ---
 \
