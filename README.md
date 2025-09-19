@@ -32,7 +32,7 @@ It is built with **React (Vite)**, **TailwindCSS**, **Framer Motion**, and integ
 
 ```frontend/
 │── public/
-│   └── index.html            # Main HTML entry
+│            
 │── src/
 │   ├── Pages/                # Page components
 │   │   ├── event/            # Event-related pages
@@ -53,6 +53,7 @@ It is built with **React (Vite)**, **TailwindCSS**, **Framer Motion**, and integ
 │   ├── App.css               # Global styles
 │   ├── index.css             # Tailwind & reset styles
 │   └── main.jsx              # React entry
+|   └── index.html             # Main HTML entry
 │── .gitignore
 │── eslint.config.js
 │── index.html
