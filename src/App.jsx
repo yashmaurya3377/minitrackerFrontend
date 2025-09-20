@@ -9,20 +9,25 @@ import EventList from './Pages/event/EventList';
 import CreateEvent from './Pages/event/CreateEvent';
 import MyEvents from './Pages/event/MyEvent';
 import SingleEvent from './Pages/event/SingleEvent';
+import LoadingFull from "./components/LoadingFull";
+import { useContext } from "react";
+import { AuthContext } from "./context/AuthContext";
 
 
 function App() {
+  const { loading,} = useContext(AuthContext);
+  if (loading) return <LoadingFull />;
   return (
     <>
       <Navbar />
-      <Routes>
+        <Routes>
         <Route path="/" element={<PrivateRoute><Home /></PrivateRoute>} />
         <Route path="/create-event" element={<PrivateRoute><CreateEvent /></PrivateRoute>} />
         <Route path="/events" element={<PrivateRoute><EventList /></PrivateRoute>} />
         <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
         <Route path="/signup" element={<PublicRoute><Signup /></PublicRoute>} />
         <Route path="/events/:id" element={<SingleEvent />} />
-        <Route path="/my-events" element={<PublicRoute><MyEvents/></PublicRoute>} />
+        <Route path="/my-events" element={<PublicRoute><MyEvents /></PublicRoute>} />
       </Routes>
     </>
   );

@@ -24,7 +24,7 @@ export const EventProvider = ({ children }) => {
       .then((res) => setEvents(res.data))
       .catch((err) => setError(err.response?.data?.msg || "Failed to load events"))
       .finally(() => setLoading(false));
-  }, []);
+  }, [events]);
 
  const createEvent = async (formData) => {
   try {
@@ -36,7 +36,7 @@ export const EventProvider = ({ children }) => {
     return { success: false, message: err.response?.data?.msg || "Failed to create event" };
   }
   finally{
-    window.location.reload()
+    // window.location.reload()
   }
 };
 
