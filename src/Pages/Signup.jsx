@@ -62,8 +62,8 @@ const Signup = () => {
   };
 
   return (
-    <div className="pt-16 h-screen">
-      <section className="flex flex-col lg:flex-row items-stretch text-white min-h-screen">
+    <div className="pt-16 h-screen bg-black">
+      <section className="flex flex-col lg:flex-row items-stretch text-white ">
         {/* Left Side - Background Image */}
         <div
           className="lg:w-1/2 w-full h-48 lg:h-auto bg-gray-500 bg-no-repeat bg-cover bg-center relative flex items-center"

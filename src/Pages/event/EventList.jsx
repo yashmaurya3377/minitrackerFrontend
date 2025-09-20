@@ -50,7 +50,7 @@ const EventList = () => {
     );
 
   return (
-    <div className="w-full min-h-screen py-12 px-4 sm:px-6 lg:px-10 bg-gradient-to-br from-blue-500 to-gray-100">
+    <div className="w-full min-h-screen py-12 mt-10 px-4 sm:px-6 lg:px-10 bg-gradient-to-br from-blue-500 to-gray-100">
       <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-8 sm:mb-10 text-center text-gray-800 tracking-tight">
         🎉 My Events
       </h2>

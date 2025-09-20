@@ -7,7 +7,6 @@ import PrivateRoute from "./routes/PrivateRoute";
 import PublicRoute from "./routes/PublicRoute";
 import EventList from './Pages/event/EventList';
 import CreateEvent from './Pages/event/CreateEvent';
-import MyEvents from './Pages/event/MyEvent';
 import SingleEvent from './Pages/event/SingleEvent';
 import LoadingFull from "./components/LoadingFull";
 import { useContext } from "react";
@@ -27,7 +26,6 @@ function App() {
         <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
         <Route path="/signup" element={<PublicRoute><Signup /></PublicRoute>} />
         <Route path="/events/:id" element={<SingleEvent />} />
-        <Route path="/my-events" element={<PublicRoute><MyEvents /></PublicRoute>} />
       </Routes>
     </>
   );

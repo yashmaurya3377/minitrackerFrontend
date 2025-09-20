@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { motion } from "framer-motion";
 import { EventContext } from "../../context/EventContext";
 import { Calendar, MapPin, Clock, FileText, Type } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const EventForm = () => {
   const { createEvent } = useContext(EventContext);
@@ -35,7 +36,7 @@ const EventForm = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-blue-500 to-gray-100 P-4 mt-15">
+    <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-blue-500 to-gray-100 P-4 lg:mt-15 md:mt-15 sm-mt-10">
       <motion.form
         onSubmit={handleSubmit}
         initial={{ opacity: 0, y: 20 }}
@@ -150,16 +151,20 @@ const EventForm = () => {
           {loading ? "Creating..." : "Create Event"}
         </button>
 
-        {/* Message */}
         {message && (
           <p
-            className={`mt-4 text-center font-medium ${
-              message.includes("✅") ? "text-green-600" : "text-red-500"
-            }`}
+            className={`mt-4 text-center font-medium ${message.includes("✅") ? "text-green-600" : "text-red-500"
+              }`}
           >
             {message}
           </p>
         )}
+        <Link
+          to="/events"
+          className="mt-3 text-blue-600 hover:text-blue-800 underline transition"
+        >
+          View Event List
+        </Link>
       </motion.form>
     </div>
   );
